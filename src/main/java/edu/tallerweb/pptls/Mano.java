@@ -7,8 +7,7 @@ public class Mano {
 	private final Forma forma;
 
 	/**
-	 * Toda Mano debe crearse con una forma dada, que será la que determine su
-	 * condición en el juego. 
+	 * Toda Mano debe crearse con una forma dada, que será la que determine su condición en el juego. 
 	 * @param forma, la Forma que adopta la Mano.
 	 */
 	public Mano(final Forma forma) {
@@ -18,7 +17,6 @@ public class Mano {
 
 	/**
 	 * Evaluará el resultado de la partida según las reglas del juego.
-
 	 * @param otra, la otra Mano.
 	 * @return un Resultado, de acuerdo al estado del juego.
 	 */
