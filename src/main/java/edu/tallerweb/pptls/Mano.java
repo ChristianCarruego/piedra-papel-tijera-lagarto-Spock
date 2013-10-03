@@ -1,11 +1,22 @@
 package edu.tallerweb.pptls;
 
+import java.util.ArrayList;
+
 /**
  * Representa una de las Manos involucradas en el juego
  */
 public class Mano {
 	private final Forma forma;
+	private final ArrayList<Integer> ganaA = new ArrayList<Integer>() {
+		{
+			add(-4);
+			add(-3);
+			add(1);
+			add(2);
+		}
 
+	};
+	
 	/**
 	 * Toda Mano debe crearse con una forma dada, que será la que determine su condición en el juego. 
 	 * @param forma, la Forma que adopta la Mano.
@@ -27,8 +38,7 @@ public class Mano {
 
 		if (diferencia == 0) {
 			return Resultado.EMPATA;
-		} else if (diferencia == -4 || diferencia == -3 || diferencia == 1
-				|| diferencia == 2) {
+		} if (this.ganaA.contains(diferencia)) {
 			return Resultado.GANA;
 		}
 		return Resultado.PIERDE;
