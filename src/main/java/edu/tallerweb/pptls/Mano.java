@@ -7,15 +7,14 @@ import java.util.ArrayList;
  */
 public class Mano {
 	private final Forma forma;
-	private final ArrayList<Integer> ganaA = new ArrayList<Integer>() {
-		{
-			add(-4);
-			add(-3);
-			add(1);
-			add(2);
+	private final ArrayList<Integer> ganarA = new ArrayList<Integer>(){
+		{add(-4);
+		 add(-3);
+		 add (1);
+		 add (2);
 		}
-
 	};
+	
 
 	/**
 	 * Toda Mano debe crearse con una forma dada, que será la que determine su
@@ -40,7 +39,7 @@ public class Mano {
 		if (diferencia == 0) {
 			return Resultado.EMPATA;
 		}
-		if (this.ganaA.contains(diferencia)) {
+		if (this.ganarA.contains(diferencia)) {
 			return Resultado.GANA;
 		}
 		return Resultado.PIERDE;
