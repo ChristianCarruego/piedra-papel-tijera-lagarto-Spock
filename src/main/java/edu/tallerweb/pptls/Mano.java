@@ -8,10 +8,8 @@ public class Mano {
 
 	/**
 	 * Toda Mano debe crearse con una forma dada, que será la que determine su
-	 * condición en el juego.
-	 * 
-	 * @param forma
-	 *            , la Forma que adopta la Mano.
+	 * condición en el juego. 
+	 * @param forma, la Forma que adopta la Mano.
 	 */
 	public Mano(final Forma forma) {
 		this.forma = forma;
@@ -20,9 +18,8 @@ public class Mano {
 
 	/**
 	 * Evaluará el resultado de la partida según las reglas del juego.
-	 * 
-	 * @param otra
-	 *            , la otra Mano.
+
+	 * @param otra, la otra Mano.
 	 * @return un Resultado, de acuerdo al estado del juego.
 	 */
 	public Resultado jugarCon(final Mano otra) {
@@ -33,8 +30,9 @@ public class Mano {
 		if (diferencia == 0) {
 			return Resultado.EMPATA;
 		} else if (diferencia == -4 || diferencia == -3 || diferencia == 1
-				|| diferencia == 2)
+				|| diferencia == 2) {
 			return Resultado.GANA;
+		}
 		return Resultado.PIERDE;
 	}
 }
