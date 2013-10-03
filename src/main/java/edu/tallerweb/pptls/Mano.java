@@ -1,6 +1,6 @@
 ﻿package edu.tallerweb.pptls;
 
-import java.util.ArrayList;
+
 
 /**
  * Representa una de las Manos involucradas en el juego
